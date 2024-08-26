@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1033009541201",
+    "firebase_url": "https://task-points-76836-default-rtdb.firebaseio.com",
+    "project_id": "task-points-76836",
+    "storage_bucket": "task-points-76836.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033009541201:android:18738e26eb0e965544c870",
+        "android_client_info": {
+          "package_name": "br.gabriethales.dev.task_points"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTxoC2RpR3jVg9SkTwHpFLh4N7aa04Kdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
