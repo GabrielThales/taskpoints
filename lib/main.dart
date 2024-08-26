@@ -5,6 +5,7 @@ import 'package:task_points/routes/routes.dart';
 import 'package:task_points/service/auth_provider.dart';
 import 'package:task_points/service/tarefa_provider.dart';
 import 'package:task_points/views/cadastro_view.dart';
+import 'package:task_points/views/dashboard_view.dart';
 import 'package:task_points/views/form_tarefa_view.dart';
 import 'package:task_points/views/home_view.dart';
 import 'package:task_points/views/login_view.dart';
@@ -46,9 +47,10 @@ class MyApp extends StatelessWidget {
         Routes.CADASTRO_VIEW : (context) => CadastroView(),
         Routes.HOME_VIEW : (context) => HomeView(),
         Routes.FORM_TAREFA_VIEW : (context) => FormTarefaView(),
-        Routes.TAREFA_VIEW : (context) => TarefaView()
+        Routes.TAREFA_VIEW : (context) => TarefaView(),
+        Routes.DASHBOARD_VIEW : (context) => DashboardView()
       },
-      home: LoginView()//user != null ? HomeView() : LoginView(),
+      home: user != null ? HomeView() : LoginView(),
     ),);
   }
 }

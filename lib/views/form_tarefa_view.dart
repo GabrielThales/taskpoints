@@ -175,8 +175,8 @@ class _FormTarefaView extends State<FormTarefaView> {
                     Navigator.pop(context);
                   } else {
                     tarefa?.nome = _controllerNome.text;
-                    //tarefa?.local = _controllerLocal.text;
-                    //tarefa?.descricao = _controllerDescricao.text;
+                    tarefa?.prioridade = prioridadeTarefa;
+                    tarefa?.dataTermino = _controllerData.text;
                     //tarefaProvider.editarTarefa(tarefa!);
                     Navigator.pop(context);
                   }

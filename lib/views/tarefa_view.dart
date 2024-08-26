@@ -44,10 +44,6 @@ class _TarefaView extends State<TarefaView> {
                 Text(
                   tarefa.status,
                   style: TextStyle(fontSize: 22, overflow: TextOverflow.clip),
-                ),
-                Text(
-                  tarefa.dataTermino.toString(),
-                  style: TextStyle(fontSize: 22, overflow: TextOverflow.clip),
                 )
               ],
             )
@@ -58,8 +54,11 @@ class _TarefaView extends State<TarefaView> {
         BottomNavigationBarItem(
             icon: IconButton(
           onPressed: () {
-            tarefa.status = TarefasStatus.CONCLUIDO;
-            //tarefaProvider.editarTarefa(tarefa);
+            setState(() {
+              tarefa.status = TarefasStatus.CONCLUIDO;
+              tarefaProvider.concluirTarefa(tarefa);
+              Navigator.pop(context);
+            });
           },
           icon: Icon(Icons.task_alt),
         ),

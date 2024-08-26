@@ -4,4 +4,5 @@ class Routes {
   static const HOME_VIEW = "HOME_VIEW";
   static const FORM_TAREFA_VIEW = "form_tarefa_view";
   static const TAREFA_VIEW = "tarefa_view";
+  static const DASHBOARD_VIEW = "dashboard_view";
 }

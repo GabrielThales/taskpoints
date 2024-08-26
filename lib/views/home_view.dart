@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_points/views/dashboard_view.dart';
 import 'package:task_points/views/perfil_view.dart';
 import 'package:task_points/views/lista_tarefas_view.dart';
 
@@ -13,7 +14,7 @@ class _HomeView extends State<HomeView> {
   int _currentIndex = 0;
   List<Widget> body= [
     ListaTarefasView(),
-    const Icon(Icons.dashboard),
+    DashboardView(),
     PerfilView()
   ];
 
